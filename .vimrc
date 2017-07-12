@@ -6,7 +6,11 @@ set showmatch
 set smartcase
 set autoindent
 set path=$PWD/*
+set exrc
 
+" Custom commands
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+:nnoremap <leader>sv :source $MYVIMRC<cr>
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -26,12 +30,11 @@ Plug 'vim-airline/vim-airline-themes'
 " Themes
 Plug 'flazz/vim-colorschemes'
 
-" Inline autocomplete
-Plug 'valloric/youcompleteme'
-
 call plug#end()
 
 " Plugin settings
 nnoremap <C-p> :FZF<CR>
 set updatetime=250
 colorscheme flatland
+
+set secure
