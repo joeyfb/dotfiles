@@ -3,7 +3,7 @@ alias gm='git commit -m '
 alias gss='git status --short'
 alias gs='git status'
 alias g.='git add .'
-alias gpd='git push origin develop'
+alias gpd='git push origin develop; git push origin develop'
 alias repos='cd ~/Code/repos/'
 
 alias tmfast='sudo sysctl debug.lowpri_throttle_enabled=0'
