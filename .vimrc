@@ -7,10 +7,15 @@ set smartcase
 set autoindent
 set path=$PWD/*
 set exrc
+set number
+match ErrorMsg '\%>80v.\+'
 
 " Custom commands
-:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-:nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <c-N> :GitGutterNextHunk<CR>
+nnoremap <c-L> :GitGutterPrevHunk<CR>
+nnoremap <c-U> :GitGutterUndoHunk<CR>
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -35,6 +40,6 @@ call plug#end()
 " Plugin settings
 nnoremap <C-p> :FZF<CR>
 set updatetime=250
-colorscheme flatland
+colorscheme 256-grayvim
 
 set secure
