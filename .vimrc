@@ -13,7 +13,6 @@ match ErrorMsg '\%>80v.\+'
 " Custom commands
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
-nnoremap ? :GFiles<CR>
 nnoremap <c-N> :GitGutterNextHunk<CR>
 nnoremap <c-L> :GitGutterPrevHunk<CR>
 nnoremap <c-U> :GitGutterUndoHunk<CR>
