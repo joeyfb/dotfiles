@@ -16,6 +16,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <c-N> :GitGutterNextHunk<CR>
 nnoremap <c-L> :GitGutterPrevHunk<CR>
 nnoremap <c-U> :GitGutterUndoHunk<CR>
+nnoremap <c-T> :vsp <bar> terminal clang++ -std=c++11 -stdlib=libc++ -o a.test test/*.cpp; ./a.test<CR>
 
 call plug#begin('~/.config/nvim/plugged')
 
